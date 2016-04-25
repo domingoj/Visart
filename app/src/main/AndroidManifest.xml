@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.fundamentals.visart"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".VisartApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.authentication.LoginActivity"
+            android:theme="@style/LoginScreenTheme">
+
+        </activity>
+
+
+        <activity
+            android:name=".ui.progress.StoryProgressListActivity"
+            android:parentActivityName=".ui.profile.ProfileActivity"/>
+
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:parentActivityName=".ui.MainActivity"/>
+
+        <activity
+            android:name=".ui.profile.StoryEditActivity"
+            android:parentActivityName=".ui.profile.ProfileActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".ui.progress.ProgressDetailSliderActivity"/>
+
+        <activity
+            android:name=".ui.progress.ProgressEditActivity"
+            android:parentActivityName=".ui.progress.StoryProgressListActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <meta-data
+            android:name="CLOUDINARY_URL"
+            android:value="cloudinary://325478991391715:7q0j1YuJNr9_jUZkiojkj_R-BQw@fundamentalz"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+    </application>
+
+</manifest>

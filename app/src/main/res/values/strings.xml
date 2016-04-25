@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Visart</string>
+    <string name="action_settings">Settings</string>
+    <string name="home_string">Home</string>
+    <string name="subscriptions_string">Subscriptions</string>
+    <string name="hot_string">What\'s hot?</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="profile_string">My Profile</string>
+    <string name="positive_button_create">Create Story</string>
+    <string name="hint_create_story_title">Story title</string>
+    <string name="hint_create_story_description">Description</string>
+    <string name="string_progress_add">Add Progress</string>
+    <string name="string_login_with_facebook">Facebook</string>
+    <string name="string_login_with_google">Google</string>
+
+     <string name="string_sign_up">Register</string>
+    <string name="string_forgot_password">Forgot Password?</string>
+
+</resources>
