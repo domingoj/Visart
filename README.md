@@ -1,5 +1,5 @@
 # Visart
-Visart app - lets you uload art progress. For now its basically just an photo album uploader app. For learning purposes of Material components, Firebase SDK, Cloudinary, butterknife, etc.
+Visart app - lets you upload art progress. For now its basically just an photo album uploader app. For learning purposes of Material components, Firebase SDK, Cloudinary, butterknife, etc.
 
 After checking out the code, required libraries have to be added.
 material design libraries (recyclerview, cardview, etc.)
